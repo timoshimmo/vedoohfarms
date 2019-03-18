@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="btn_get_started_width">230dp</dimen>
+    <dimen name="start_body_padding_left">30dp</dimen>
+    <dimen name="login_top_icon_size">100dp</dimen>
+    <dimen name="login_desc_icons_size">50dp</dimen>
+    <dimen name="login_top_padding_top_bottom">14dp</dimen>
+    <dimen name="login_top_padding_left_right">23dp</dimen>
+    <dimen name="login_top_body_height">170dp</dimen>
+    <dimen name="collapsed_top_icon_size">66dp</dimen>
+    <dimen name="login_form_padding_bottom">25dp</dimen>
+    <dimen name="login_form_padding_start">20dp</dimen>
+    <dimen name="login_form_padding_top">30dp</dimen>
+    <dimen name="underline_margin_bottom">6dp</dimen>
+    <dimen name="password_underline_margin_bottom">25dp</dimen>
+    <dimen name="btn_login_height">35dp</dimen>
+    <dimen name="btn_login_margin_bottom">10dp</dimen>
+    <dimen name="btn_forgotten_height">20dp</dimen>
+    <dimen name="btn_create_account_sub_margin_top">24dp</dimen>
+    <dimen name="login_form_edit_padding_top_bottom">5dp</dimen>
+    <dimen name="login_form_button_text_size">18sp</dimen>
+    <dimen name="signup_title_margin_top">30dp</dimen>
+    <dimen name="full_name_separator_width">10dp</dimen>
+    <dimen name="top_bar_left_margin">10dp</dimen>
+    <dimen name="fullname_edit_margin_bottom">50dp</dimen>
+    <dimen name="edit_left_padding">5dp</dimen>
+    <dimen name="clear_image_size">16dp</dimen>
+    <dimen name="datepicker_height">172dp</dimen>
+    <dimen name="fb_logo_size">10dp</dimen>
+    <dimen name="fb_gp_padding_top_bottom">3dp</dimen>
+    <dimen name="fb_gp_padding_left">5dp</dimen>
+    <dimen name="social_icon_size">15dp</dimen>
+    <dimen name="social_icon_margin_right">7dp</dimen>
+    <dimen name="login_here_btn_margin_left">3dp</dimen>
+    <dimen name="btn_login_here_width">90dp</dimen>
+    <dimen name="cancel_signup_padding_left_right">15dp</dimen>
+    <dimen name="cancel_signup_buttons_height">35dp</dimen>
+    <dimen name="cancel_signup_buttons_width">65dp</dimen>
+    <dimen name="signup_container_padding_left_right">10dp</dimen>
+    <dimen name="signup_button_width">80dp</dimen>
+    <dimen name="padding_order_units_left_right">15dp</dimen>
+    <dimen name="add_to_bag_height">35sp</dimen>
+    <dimen name="btn_add_bag_left_padding">10dp</dimen>
+    <dimen name="btn_add_to_bag_width">215dp</dimen>
+    <dimen name="search_padding_left">10dp</dimen>
+    <dimen name="search_container_padding_right">10dp</dimen>
+    <dimen name="notification_row_padding_left_right">15dp</dimen>
+    <dimen name="notification_title_margin_left">25dp</dimen>
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/curved_shadow_background"
+    android:layout_marginEnd="@dimen/padding_order_units_left_right"
+    android:layout_marginLeft="@dimen/padding_order_units_left_right"
+    android:layout_marginRight="@dimen/padding_order_units_left_right"
+    android:layout_marginStart="@dimen/padding_order_units_left_right"
+    android:layout_marginBottom="@dimen/qty_body_bottom"
+    android:layout_marginTop="@dimen/qty_body_bottom"
+    android:paddingBottom="2dp">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/curved_edge_white_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_order_units_left_right"
+            android:paddingRight="@dimen/padding_order_units_left_right"
+            android:paddingStart="@dimen/padding_order_units_left_right"
+            android:paddingEnd="@dimen/padding_order_units_left_right"
+            android:paddingTop="@dimen/padding_order_units_left_right">
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/tw__composer_close"
+                android:id="@+id/btnCloseDetails"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/btn_close_item_details_desc" />
+
+            <TextView
+                android:text="@string/about_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtAboutTitle"
+                android:layout_below="@+id/btnCloseDetails"
+                android:layout_marginTop="@dimen/details_margin_top"
+                android:textSize="@dimen/about_title_text_size"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/custom_mid_gray" />
+
+            <TextView
+                android:text="@string/title_activity_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtAboutDetails"
+                android:layout_below="@+id/txtAboutTitle"
+                android:layout_marginTop="@dimen/about_details_text_size"
+                android:textSize="@dimen/about_details_info_text_size"
+                android:textColor="@color/custom_mid_gray" />
+
+            <TextView
+                android:text="@string/nutrition_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNutritionTitle"
+                android:layout_below="@+id/txtAboutDetails"
+                android:layout_marginTop="@dimen/details_margin_top"
+                android:textSize="@dimen/about_title_text_size"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/custom_mid_gray" />
+
+            <TextView
+                android:text="@string/title_activity_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNutritionDetails"
+                android:layout_below="@+id/txtNutritionTitle"
+                android:layout_marginTop="@dimen/about_details_text_size"
+                android:textColor="@color/custom_mid_gray"
+                android:textSize="@dimen/about_details_info_text_size" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

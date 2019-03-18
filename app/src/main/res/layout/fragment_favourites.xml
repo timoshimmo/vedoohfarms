@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.android.vedoohfarms.homepages.Fragments.FragmentFavourite"
+    android:background="@color/custom_very_light_gray">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/rvFavourites"
+        android:paddingBottom="@dimen/home_row_bottom_margin"
+        android:paddingEnd="@dimen/home_padding_left_right"
+        android:paddingLeft="@dimen/home_padding_left_right"
+        android:paddingRight="@dimen/home_padding_left_right"
+        android:paddingStart="@dimen/home_padding_left_right"
+        android:paddingTop="@dimen/home_row_bottom_margin" />
+</RelativeLayout>

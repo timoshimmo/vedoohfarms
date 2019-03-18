@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="app.android.vedoohfarms.homepages.Activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="@android:color/white"
+            app:title="Home">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/search_container"
+                android:paddingRight="@dimen/search_container_padding_right"
+                android:visibility="visible">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_search_string"
+                    android:ems="17"
+                    android:id="@+id/txtSearchItems"
+                    android:background="@drawable/custom_search_background"
+                    android:inputType="textFilter"
+                    android:paddingTop="@dimen/search_padding_top_bottom"
+                    android:paddingBottom="@dimen/search_padding_top_bottom"
+                    android:paddingLeft="@dimen/search_padding_left"
+                    android:paddingStart="@dimen/search_padding_left"
+                    android:paddingRight="@dimen/search_padding_left"
+                    android:paddingEnd="@dimen/search_padding_left"
+                    android:textSize="@dimen/full_name_text_size"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_centerVertical="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_shopping_bag_purchase"
+                    android:id="@+id/btn_orders"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tabIndicatorColor="@android:color/white"
+            android:id="@+id/home_tab">
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tab_home"
+                android:icon="@drawable/ic_home_default" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tab_search"
+                android:icon="@drawable/ic_search_tool_default" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tab_favourite"
+                android:icon="@drawable/ic_heart_default" />
+
+        </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+</android.support.design.widget.CoordinatorLayout>

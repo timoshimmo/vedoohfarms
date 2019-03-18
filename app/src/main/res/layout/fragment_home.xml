@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepages.Fragments.FragmentHome">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/rvHome"
+        android:paddingEnd="@dimen/home_padding_left_right"
+        android:paddingLeft="@dimen/home_padding_left_right"
+        android:paddingRight="@dimen/home_padding_left_right"
+        android:paddingStart="@dimen/home_padding_left_right"
+        android:paddingTop="@dimen/home_row_bottom_margin"
+        android:paddingBottom="@dimen/home_row_bottom_margin"
+        android:background="@color/custom_mid_light_gray" />
+</RelativeLayout>

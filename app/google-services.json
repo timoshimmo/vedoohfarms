@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "756743525220",
+    "firebase_url": "https://vedoohfarm.firebaseio.com",
+    "project_id": "vedoohfarm",
+    "storage_bucket": "vedoohfarm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756743525220:android:e5840c0ece26eb77",
+        "android_client_info": {
+          "package_name": "app.android.vedoohfarms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "756743525220-heqoudlrg0f7o01s816opdrmm2u5cp0q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.android.vedoohfarms",
+            "certificate_hash": "a558cee9fe22a97def2d19e47b336e43a07113b1"
+          }
+        },
+        {
+          "client_id": "756743525220-4fs6rmgbqhfac4jds6ejvvurnosbd5ih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvPabLpdVxKODahGtCM1JzqoVE9SU1K5w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "756743525220-4fs6rmgbqhfac4jds6ejvvurnosbd5ih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

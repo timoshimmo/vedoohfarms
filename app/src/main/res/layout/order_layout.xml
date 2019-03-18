@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="@dimen/padding_order_units_left_right"
+    android:paddingRight="@dimen/padding_order_units_left_right"
+    android:paddingLeft="@dimen/padding_order_units_left_right"
+    android:paddingStart="@dimen/padding_order_units_left_right"
+    android:paddingBottom="@dimen/qty_body_bottom"
+    android:background="@android:color/transparent">
+
+    <ImageButton
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        android:id="@+id/btn_cancel_order"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="@dimen/qty_padding_bottom"
+        android:layout_width="@dimen/dialog_cancel_button"
+        android:layout_height="@dimen/dialog_cancel_button"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/btn_order_close_desc" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="1dp"
+        android:background="@drawable/curved_shadow_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curved_edge_white_background"
+            android:paddingLeft="@dimen/padding_order_units_left_right"
+            android:paddingStart="@dimen/padding_order_units_left_right"
+            android:paddingRight="@dimen/padding_order_units_left_right"
+            android:paddingEnd="@dimen/padding_order_units_left_right">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_order_units_left_right"
+                android:paddingStart="@dimen/padding_order_units_left_right"
+                android:paddingRight="@dimen/padding_order_units_left_right"
+                android:paddingEnd="@dimen/padding_order_units_left_right"
+                android:paddingTop="@dimen/qty_body_top_padding"
+                android:paddingBottom="@dimen/qty_body_top_padding"
+                android:layout_toLeftOf="@+id/btnMore"
+                android:layout_toRightOf="@+id/btnLess"
+                android:gravity="center_horizontal"
+                android:id="@+id/qtyValueBody"
+                android:layout_toStartOf="@+id/btnMore"
+                android:layout_toEndOf="@+id/btnLess">
+
+                <TextView
+                    android:text="@string/unit_text_string"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtQtyUnit"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/custom_dark_gray"
+                    android:textSize="@dimen/signup_details_text_size" />
+
+                <TextView
+                    android:text="@string/qty_default_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtQuantity"
+                    android:gravity="center"
+                    android:textSize="@dimen/qty_text_size"
+                    android:textColor="@color/custom_dark_gray"
+                    android:layout_marginBottom="@dimen/qty_order_bottom_margin"
+                    android:layout_marginTop="@dimen/qty_order_top_bottom_margin" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_to_bag_height"
+                    android:background="@drawable/button_corners"
+                    android:id="@+id/btn_add_item_to_bag">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_shopping_bag"
+                        android:id="@+id/btn_add_to_bag_img"
+                        android:layout_centerHorizontal="false"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/btn_add_to_bag_text"
+                        android:layout_toStartOf="@+id/btn_add_to_bag_text"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:contentDescription="@string/btn_add_to_bag_image" />
+
+                    <TextView
+                        android:text="@string/add_to_bag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_add_to_bag_text"
+                        android:textColor="@android:color/white"
+                        android:layout_centerInParent="true"
+                        tools:ignore="RelativeOverlap" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="@dimen/btn_less_add_order_size"
+                android:layout_height="@dimen/btn_less_add_order_size"
+                app:srcCompat="@drawable/ic_reduce_default"
+                android:id="@+id/btnLess"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/btn_less_desc" />
+
+            <ImageButton
+                app:srcCompat="@drawable/ic_add_default"
+                android:id="@+id/btnMore"
+                android:background="@android:color/transparent"
+                android:layout_height="@dimen/btn_less_add_order_size"
+                android:layout_width="@dimen/btn_less_add_order_size"
+                android:scaleType="fitCenter"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/btn_more_desc" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

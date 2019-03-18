@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/home_row_bottom_margin">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/company_image_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/comp_row_paddin_top"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/comp_row_padding_bottom">
+
+            <View
+                android:id="@+id/image_divider_top"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@+id/company_image_content"
+                android:background="@color/custom_mid_light_gray" />
+
+            <RelativeLayout
+                android:id="@+id/company_image_content"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_alignParentTop="true">
+
+                <ImageView
+                    android:id="@+id/img_home_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/custom_super_light_gray"
+                    android:contentDescription="@string/company_biz_image_desc"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/darken_img_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.4"
+                    android:contentDescription="@string/darken_img_desc"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    app:srcCompat="@color/vpi__background_holo_dark" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/comp_logo_margin_right"
+                    android:layout_marginStart="@dimen/comp_logo_margin_right"
+                    android:layout_marginTop="@dimen/item_button_space"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/image_divider_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/company_image_content"
+                android:background="@color/custom_mid_light_gray" />
+
+            <LinearLayout
+                android:id="@+id/comp_details_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/company_image_content"
+                android:layout_marginTop="10dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:paddingEnd="20dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingStart="5dp">
+
+                    <TextView
+                        android:id="@+id/txtHomeItemName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="@dimen/comp_details_title_margin_bottom"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="@string/company_name_string"
+                        android:textColor="@color/custom_dark_gray"
+                        android:textSize="@dimen/home_item_name_text_size" />
+
+                    <TextView
+                        android:id="@+id/txtHomeItemDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtHomeItemName"
+                        android:ellipsize="end"
+                        android:fontFamily="sans-serif-light"
+                        android:lines="2"
+                        android:text="@string/comp_details_string"
+                        android:textColor="@color/custom_mid_gray"
+                        android:textSize="@dimen/company_detail_text_size" />
+
+                    <Button
+                        android:id="@+id/btn_read_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/btn_read_more_height"
+                        android:layout_below="@+id/txtHomeItemDetails"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_vertical|start"
+                        android:text="@string/read_more_string"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="@dimen/company_detail_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_read_more"
+                        android:layout_marginTop="@dimen/lis_product_margin_bottom"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/img_btn_fav_small"
+                            android:layout_width="@dimen/home_small_icon_size"
+                            android:layout_height="@dimen/home_small_icon_size"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/home_share_fav_icon"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ic_favorite_small" />
+
+                        <TextView
+                            android:id="@+id/txt_small_favourites_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/home_small_icons_margin_left"
+                            android:layout_marginStart="@dimen/home_small_icons_margin_left"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="@string/likes_sample"
+                            android:textColor="@color/custom_mid_gray"
+                            android:textSize="@dimen/company_detail_text_size" />
+
+                        <ImageButton
+                            android:id="@+id/img_btn_share_small"
+                            android:layout_width="@dimen/home_small_icon_size"
+                            android:layout_height="@dimen/home_small_icon_size"
+                            android:layout_marginLeft="@dimen/home_share_small_margin_left"
+                            android:layout_marginStart="@dimen/home_share_small_margin_left"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/home_share_small_icon_desc"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ic_share_small" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/cancel_signup_padding_left_right"
+        android:paddingRight="@dimen/cancel_signup_padding_left_right"
+        android:paddingStart="@dimen/cancel_signup_padding_left_right"
+        android:paddingEnd="@dimen/cancel_signup_padding_left_right"
+        android:paddingTop="@dimen/signup_title_margin_top_bottom"
+        android:paddingBottom="@dimen/cancel_signup_padding_bottom">
+
+        <TextView
+            android:text="@string/cancel_signup_popup_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel_signup_title"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/custom_dark_gray"
+            android:textSize="@dimen/cancel_signup_popup_title_text_size"
+            android:layout_marginBottom="@dimen/signup_title_margin_top_bottom" />
+
+        <TextView
+            android:text="@string/cancel_signup_message_string"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel_signup_message"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/cancel_signup_message_text_size"
+            android:textColor="@color/custom_light_gray"
+            android:layout_marginBottom="@dimen/cancel_signup_message_margin_bottom" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical">
+
+            <Button
+                android:text="@string/btnNo"
+                android:layout_height="@dimen/cancel_signup_buttons_height"
+                android:id="@+id/btnCancel"
+                android:textSize="@dimen/cancel_signup_message_text_size"
+                android:textColor="@color/custom_dark_gray"
+                android:background="@drawable/cancel_signup_popup_buttons_background"
+                android:layout_width="@dimen/cancel_signup_buttons_width" />
+
+            <Button
+                android:text="@string/btnYes"
+                android:layout_height="@dimen/cancel_signup_buttons_height"
+                android:id="@+id/btnYes"
+                android:textSize="@dimen/cancel_signup_message_text_size"
+                android:textColor="@color/custom_green"
+                android:background="@drawable/cancel_signup_popup_buttons_background"
+                android:layout_width="@dimen/cancel_signup_buttons_width" />
+        </LinearLayout>
+</LinearLayout>

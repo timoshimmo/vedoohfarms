@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.android.vedoohfarms.util.widgets.CustomCoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_layout">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="192dp"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:toolbarId="@+id/notify_toolbar"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlways"
+            app:contentScrim="?attr/colorPrimary"
+            android:id="@+id/login_collapse_toolbar"
+            android:fontFamily="sans-serif"
+            app:titleEnabled="false"
+            android:fitsSystemWindows="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/login_top_body"
+                android:background="@color/custom_green"
+                android:paddingTop="@dimen/login_top_padding_top_bottom"
+                android:paddingBottom="@dimen/login_top_padding_top_bottom"
+                android:paddingLeft="@dimen/login_top_padding_left_right"
+                android:paddingEnd="@dimen/login_top_padding_left_right"
+                android:paddingRight="@dimen/login_top_padding_left_right"
+                android:paddingStart="@dimen/login_top_padding_left_right"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/login_top_icon_size"
+                    android:layout_height="@dimen/login_top_icon_size"
+                    app:srcCompat="@mipmap/top_login_icon"
+                    android:id="@+id/login_logo_top"
+                    android:contentDescription="@string/app_icon_desc"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/login_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:fontFamily="sans-serif"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:titleTextColor="@android:color/white">
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/login_form_padding_start"
+            android:paddingLeft="@dimen/login_form_padding_start"
+            android:paddingRight="@dimen/login_form_padding_start"
+            android:paddingStart="@dimen/login_form_padding_start"
+            android:gravity="center_horizontal"
+            android:id="@+id/login_bottom_body"
+            android:background="@android:color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <ImageView
+                android:id="@+id/top_icon_collapsed"
+                android:layout_width="@dimen/collapsed_top_icon_size"
+                android:layout_height="@dimen/collapsed_top_icon_size"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/img_collapsed_margin_top"
+                android:visibility="gone"
+                app:srcCompat="@mipmap/ic_vedooh_white" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/login_form"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/top_icon_collapsed"
+                android:paddingTop="@dimen/login_form_padding_top">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textNoSuggestions"
+                    android:ems="10"
+                    android:id="@+id/txtUsername"
+                    android:textColor="@color/custom_dark_gray"
+                    android:hint="@string/usernmae_hint"
+                    android:textColorHint="@color/custom_super_light_gray"
+                    android:textSize="@dimen/login_form_text_size"
+                    android:background="@android:color/transparent"
+                    android:paddingBottom="@dimen/login_form_edit_padding_top_bottom"
+                    android:paddingTop="@dimen/login_form_edit_padding_top_bottom"
+                    android:fontFamily="sans-serif-light"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/underline_height"
+                    android:background="@color/custom_super_light_gray"
+                    android:id="@+id/username_underline"
+                    android:layout_marginBottom="@dimen/underline_margin_bottom" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/txtPassword"
+                    android:textColor="@color/custom_dark_gray"
+                    android:textSize="@dimen/login_form_text_size"
+                    android:textColorHint="@color/custom_super_light_gray"
+                    android:hint="@string/password_hint"
+                    android:background="@android:color/transparent"
+                    android:paddingBottom="@dimen/login_form_edit_padding_top_bottom"
+                    android:paddingTop="@dimen/login_form_edit_padding_top_bottom"
+                    android:fontFamily="sans-serif-light"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/underline_height"
+                    android:background="@color/custom_super_light_gray"
+                    android:id="@+id/paswword_underline"
+                    android:layout_marginBottom="@dimen/password_underline_margin_bottom" />
+
+                <Button
+                    android:text="@string/string_login"
+                    android:layout_width="match_parent"
+                    android:id="@+id/btnLogin"
+                    android:background="@drawable/button_corners"
+                    android:textSize="@dimen/login_form_button_text_size"
+                    android:textColor="@android:color/white"
+                    android:layout_height="@dimen/btn_login_height"
+                    android:layout_marginBottom="@dimen/btn_login_margin_bottom"
+                    android:fontFamily="sans-serif"/>
+
+                <Button
+                    android:text="@string/string_forgot_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/btn_forgotten_height"
+                    android:id="@+id/btn_forgotten_password"
+                    android:textColor="@color/custom_green"
+                    android:background="@android:color/white"
+                    android:textSize="@dimen/btn_forgotten_text_size"
+                    android:fontFamily="sans-serif"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</app.android.vedoohfarms.util.widgets.CustomCoordinatorLayout>
+
+
+
+
+

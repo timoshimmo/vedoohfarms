@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/cancel_signup_padding_left_right"
+    android:paddingRight="@dimen/cancel_signup_padding_left_right"
+    android:paddingStart="@dimen/cancel_signup_padding_left_right"
+    android:paddingEnd="@dimen/cancel_signup_padding_left_right"
+    android:paddingTop="@dimen/cancel_signup_padding_bottom"
+    android:paddingBottom="@dimen/cancel_signup_padding_bottom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/gender_alert_cancel_btn_margin_bottom">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/btn_dialog"
+            android:id="@+id/btn_close_gender_alert"
+            android:background="@android:color/transparent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:text="@string/gender_alert_title_string"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gender_alert_title"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/custom_dark_gray"
+        android:textSize="@dimen/cancel_signup_popup_title_text_size"
+        android:layout_marginBottom="@dimen/signup_title_margin_top_bottom" />
+
+    <TextView
+        android:text="@string/gender_alert_msg_string"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gender_alert_message"
+        android:fontFamily="sans-serif"
+        android:textSize="@dimen/cancel_signup_message_text_size"
+        android:textColor="@color/custom_light_gray"
+        android:layout_marginBottom="@dimen/cancel_signup_message_margin_bottom" />
+
+</LinearLayout>

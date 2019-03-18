@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frag_gender"
+    tools:context=".signups.fragments.FragmentEmail" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingEnd="@dimen/signup_container_padding_left_right"
+        android:paddingLeft="@dimen/signup_container_padding_left_right"
+        android:paddingStart="@dimen/signup_container_padding_left_right"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingRight="@dimen/signup_container_padding_left_right">
+
+        <TextView
+            android:text="@string/gender_title_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/signup_title_margin_top"
+            android:id="@+id/signup_gender_title"
+            android:textSize="@dimen/singup_title_text_size"
+            android:textColor="@color/custom_dark_gray"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:text="@string/gender_details_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signup_gender_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/signup_details_margin_top"
+            android:id="@+id/signup_details"
+            android:textSize="@dimen/signup_details_text_size"
+            android:textColor="@color/custom_light_gray"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gender_container"
+            android:layout_marginTop="@dimen/firstname_lastname_margin_bottom"
+            android:layout_below="@+id/signup_details"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/fullname_edit_margin_bottom">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGenderGroup" >
+
+                <RadioButton
+                    android:text="@string/rb_male_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbMale"
+                    android:layout_weight="1"
+                    android:textColor="@color/custom_dark_gray"
+                    android:textSize="@dimen/full_name_text_size"
+                    android:padding="@dimen/radioButtonPadding"
+                    android:button="@null"
+                    android:drawableRight="@drawable/radio_check"
+                    android:fontFamily="sans-serif"/>
+
+                <RadioButton
+                    android:text="@string/rb_female_string"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbFemale"
+                    android:layout_weight="1"
+                    android:textColor="@color/custom_dark_gray"
+                    android:textSize="@dimen/full_name_text_size"
+                    android:padding="@dimen/radioButtonPadding"
+                    android:button="@null"
+                    android:drawableRight="@drawable/radio_check"
+                    android:fontFamily="sans-serif"/>
+            </RadioGroup>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_container"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/underline_height"
+            android:background="@color/custom_super_light_gray"
+            android:id="@+id/btn_container_top_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/btn_login_margin_bottom"
+            android:paddingBottom="@dimen/btn_login_margin_bottom"
+            android:paddingRight="@dimen/signup_container_padding_left_right"
+            android:paddingEnd="@dimen/signup_container_padding_left_right"
+            android:paddingLeft="@dimen/signup_container_padding_left_right"
+            android:paddingStart="@dimen/signup_container_padding_left_right">
+
+            <Button
+                android:text="@string/string_next"
+                android:layout_width="@dimen/signup_button_width"
+                android:layout_height="@dimen/btn_login_height"
+                android:id="@+id/btn_gender_next"
+                android:background="@drawable/button_corners"
+                android:textSize="@dimen/signup_details_text_size"
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textAllCaps="false" />
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

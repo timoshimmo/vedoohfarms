@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/notification_row"
+    android:background="@color/custom_green_gray">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/notification_row_padding_left_right"
+        android:paddingLeft="@dimen/notification_row_padding_left_right"
+        android:paddingRight="@dimen/notification_row_padding_left_right"
+        android:paddingStart="@dimen/notification_row_padding_left_right"
+        android:paddingTop="@dimen/card_view_padding"
+        android:paddingBottom="@dimen/card_view_padding">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/notification_title_maring_bottom"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5">
+
+                <ImageView
+                    app:srcCompat="@android:drawable/ic_popup_reminder"
+                    android:id="@+id/notification_title_icon"
+                    android:layout_weight="0.5"
+                    android:layout_width="@dimen/notification_title_img_size"
+                    android:layout_height="@dimen/notification_title_img_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_stopwatch"
+                    android:id="@+id/imageView3" />
+
+                <TextView
+                    android:text="1 minute ago"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTimeAdded"
+                    android:gravity="right"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="@dimen/time_added_text_size"
+                    android:textColor="@color/custom_dark_green"
+                    android:paddingLeft="8dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNotificationDetail"
+            android:textColor="@color/custom_mid_gray"
+            android:lines="3"
+            android:textSize="@dimen/notify_detail_ext_size"
+            android:ellipsize="end" />
+    </LinearLayout>
+
+</LinearLayout>

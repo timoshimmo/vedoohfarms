@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".launch.activity.StartActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/start_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+
+    <Button
+        android:text="@string/string_get_started"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/get_started"
+        android:layout_above="@+id/indicator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/btn_get_started_margin_bottom"
+        android:background="@drawable/button_corners"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/btn_get_started_text_size"
+        android:layout_marginLeft="@dimen/login_form_padding_start"
+        android:layout_marginEnd="@dimen/login_form_padding_start"
+        android:layout_marginRight="@dimen/login_form_padding_start"
+        android:layout_marginStart="@dimen/login_form_padding_start" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/start_image_top_margin"
+        android:padding="@dimen/start_image_padding"
+        android:background="@drawable/green_oval_background"
+        android:id="@+id/start_image_layout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_corn_icon"
+            style="@style/circularImageViewStyle"
+            android:id="@+id/frag_one_image" />
+    </LinearLayout>
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator"
+        style="@style/CustomCirclePageIndicator"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp" />
+
+</RelativeLayout>
